@@ -1,25 +1,12 @@
 ---
-const pageTitle = "splashsite"
+import Layout from "../layouts/Layout.astro"
 ---
-
-<html lang="en">
-    <head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="generator" content={Astro.generator} >
-	<title>{pageTitle}</title>
-    </head>
-    <body>
-	<section>
-	    <h1>Enrique Javier</h1>
-	    <a href="/">home</a>
-	    <a href="/about">about</a>
-	    <a href="/blog">blog</a>
-	</section>
+<Layout title={"splashpage"}>
+    <main>
 	<section>
 	    <p>
 		I'm a DevOps Engineer building simpler, seamless workflows for devs and users alike. I fell in love with tech and its endless possibilities as early as I can remember, and I strive to make it easier for others to fall in love with it, too.
 	    </p>
 	</section>
-    </body>
+    </main>
+</Layout>

@@ -1,5 +1,5 @@
 ---
-const pageTitle = "about me";
+import Layout from "../layouts/Layout.astro";
 
 const languages = ["Python", "Java", "JavaScript", "Typescript", "Go"];
 const webDev = ["React", "Angular", "Astro", "Flask", "Django", "FastAPI", "TailwindCSS", "Spring Boot"];
@@ -7,21 +7,8 @@ const cloud = ["S3", "EC2", "Lambda", "DynamoDB", "IAM", "VPC", "SQS"];
 const devOps = ["Docker", "Kubernetes", "Terraform", "GitHub Actions", "Jenkins", "Ansible", "Enterprise Linux"];
 const tools = ["Neovim", "Bash", "PowerShell", "MySQL", "JSON", "YAML", "Markdown", "MDX", "Jira", "Confluence"];
 ---
-<html lang="en">
-    <head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="generator" content={Astro.generator} >
-	<title>{pageTitle}</title>
-    </head>
-    <body>
-	<section>
-	    <h1>Enrique Javier</h1>
-	    <a href="/">home</a>
-	    <a href="/about">about</a>
-	    <a href="/blog">blog</a>
-	</section>
+<Layout title={"about"}>
+    <main>
 	<section>
 	    <p>
 		Though I like to fancy myself a DevOps engineer, I've been fortunate enough to experience many roles and positions since 2017, giving me a greater perspective on the issues that can arise trying to use tech to optimize work. Through my time at The MET, Hermes, Accenture, and more, I've strengthened my skills in problem solving through code, architecture, and communication; allowing for the development of tools and methodologies that make that work at least 1% easier for both peers and clients alike.
@@ -49,4 +36,5 @@ const tools = ["Neovim", "Bash", "PowerShell", "MySQL", "JSON", "YAML", "Markdow
 	    </ul>
 	    <a href="/enrique_javier_resume.pdf">Download Resume (PDF)</a>
 	</section>
-    </body>
+    </main>
+</Layout>
