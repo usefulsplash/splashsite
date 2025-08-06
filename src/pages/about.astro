@@ -1,18 +1,11 @@
 ---
-const pageTitle = "hi, i'm splash";
+const pageTitle = "about me";
 
-const identity = {
-    firstName: "Enrique",
-    country: "US",
-    occupation: "DevSecOps Engineer",
-    hobbies: ["gaming", "keyboard building", "thrifting"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Documentation Writing"];
-
-const happy = true;
-const finished = false;
-const goal = 3;
+const languages = ["Python", "Java", "JavaScript", "Typescript", "Go"];
+const webDev = ["React", "Angular", "Astro", "Flask", "Django", "FastAPI", "TailwindCSS", "Spring Boot"];
+const cloud = ["S3", "EC2", "Lambda", "DynamoDB", "IAM", "VPC", "SQS"];
+const devOps = ["Docker", "Kubernetes", "Terraform", "GitHub Actions", "Jenkins", "Ansible", "Enterprise Linux"];
+const tools = ["Neovim", "Bash", "PowerShell", "MySQL", "JSON", "YAML", "Markdown", "MDX", "Jira", "Confluence"];
 ---
 <html lang="en">
     <head>
@@ -23,30 +16,36 @@ const goal = 3;
 	<title>{pageTitle}</title>
     </head>
     <body>
-	<a href="/">home</a>
-	<a href="/about">about</a>
-	<a href="/blog">blog</a>
-
-	<h1>{pageTitle}</h1>
-	<h2>devsecops engineer + amateur blogger</h2>
-	<p>I'm Enrique "splash" Javier, a DevSecOps engineer based in NYC, focused on maintaining secure and reliable applications in any and all environments.</p>
-
-	<p>Here are a few facts about me:</p>
-	<ul>
-	    <li>My name is {identity.firstName}.</li>
-	    <li>I live in the {identity.country} and I work as a {identity.occupation}.</li>
-	    {identity.hobbies.length >= 2 &&
-	    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-	    }
-	</ul>
-	<p>My skills are:</p>
-	<ul>
-	    {skills.map((skill) => <li>{skill}</li>)}
-	</ul>
-
-	{happy && <p>I am happy to be learning Astro!</p>}
-
-	{finished && <p>I finished this tutorial!</p>}
-
-	{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+	<section>
+	    <h1>Enrique Javier</h1>
+	    <a href="/">home</a>
+	    <a href="/about">about</a>
+	    <a href="/blog">blog</a>
+	</section>
+	<section>
+	    <p>
+		Though I like to fancy myself a DevOps engineer, I've been fortunate enough to experience many roles and positions since 2017, giving me a greater perspective on the issues that can arise trying to use tech to optimize work. Through my time at The MET, Hermes, Accenture, and more, I've strengthened my skills in problem solving through code, architecture, and communication; allowing for the development of tools and methodologies that make that work at least 1% easier for both peers and clients alike.
+	    </p>
+	    <h2>Skillset</h2>
+	    <h3>Languages</h3>
+	    <ul>
+		{languages.map((lang) => <li>{lang}</li>)}
+	    </ul>
+	    <h3>Web Dev</h3>
+	    <ul>
+		{webDev.map((webdev) => <li>{webdev}</li>)}
+	    </ul>
+	    <h3>AWS</h3>
+	    <ul>
+		{cloud.map((service) => <li>{service}</li>)}
+	    </ul>
+	    <h3>IT & DevOps</h3>
+	    <ul>
+		{devOps.map((IT) => <li>{IT}</li>)}
+	    </ul>
+	    <h3>Tools</h3>
+	    <ul>
+		{tools.map((tool) => <li>{tool}</li>)}
+	    </ul>
+	</section>
     </body>
