@@ -18,10 +18,9 @@ const { title = "Default" } = Astro.props as Props;
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>{title}</title>
     </head>
-    <body>
+    <body class="font-mono px-12 text-sm">
 	<Header />
 	<slot />
-	<hr />
 	<Footer />
     </body>
 </html>

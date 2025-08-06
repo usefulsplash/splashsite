@@ -1,5 +1,6 @@
 @import "tailwindcss";
+@import '@fontsource-variable/victor-mono';
 
 @theme {
-    --font-sans: 'Verdana', 'sans-serif';
+    --font-mono: "Victor Mono Variable", monospace;
 }
