@@ -1,40 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
-const languages = ["Python", "Java", "JavaScript", "Typescript", "Go"];
-const webDev = ["React", "Angular", "Astro", "Flask", "Django", "FastAPI", "TailwindCSS", "Spring Boot"];
-const cloud = ["S3", "EC2", "Lambda", "DynamoDB", "IAM", "VPC", "SQS"];
-const devOps = ["Docker", "Kubernetes", "Terraform", "GitHub Actions", "Jenkins", "Ansible", "Enterprise Linux"];
-const tools = ["Neovim", "Bash", "PowerShell", "MySQL", "JSON", "YAML", "Markdown", "MDX", "Jira", "Confluence"];
 ---
 <Layout title={"about"}>
     <main>
-	<section>
-	    <p>
-		Though I like to fancy myself a DevOps engineer, I've been fortunate enough to experience many roles and positions since 2017, giving me a greater perspective on the issues that can arise trying to use tech to optimize work. Through my time at The MET, Hermes, Accenture, and more, I've strengthened my skills in problem solving through code, architecture, and communication; allowing for the development of tools and methodologies that make that work at least 1% easier for both peers and clients alike.
-	    </p>
-	    <h2>Skillset</h2>
-	    <h3>Languages</h3>
-	    <ul>
-		{languages.map((lang) => <li>{lang}</li>)}
-	    </ul>
-	    <h3>Web Dev</h3>
-	    <ul>
-		{webDev.map((webdev) => <li>{webdev}</li>)}
-	    </ul>
-	    <h3>AWS</h3>
-	    <ul>
-		{cloud.map((service) => <li>{service}</li>)}
-	    </ul>
-	    <h3>IT & DevOps</h3>
-	    <ul>
-		{devOps.map((IT) => <li>{IT}</li>)}
-	    </ul>
-	    <h3>Tools</h3>
-	    <ul>
-		{tools.map((tool) => <li>{tool}</li>)}
-	    </ul>
-	    <a href="/enrique_javier_resume.pdf">Download Resume (PDF)</a>
+	<section class="flex flex-col space-y-6">
+	    <div>
+		<p>
+		    Though I like to fancy myself a DevOps engineer, I've been fortunate enough to experience many roles and positions since 2017, giving me a greater perspective on the issues that can arise trying to use tech to optimize work. Through my time at The MET, Hermes, Accenture, and more, I've strengthened my skills in problem solving through code, architecture, and communication; allowing for the development of tools and methodologies that make that work at least 1% easier for all.
+		</p>
+	    </div>
 	</section>
     </main>
 </Layout>

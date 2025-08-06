@@ -1,12 +1,64 @@
 ---
 import Layout from "../layouts/Layout.astro"
+
+const languages = ["Python", "Java", "JavaScript", "Typescript", "Go"];
+const webDev = ["React", "Angular", "Astro", "Flask", "Django", "FastAPI", "TailwindCSS", "Spring Boot"];
+const cloud = ["S3", "EC2", "Lambda", "DynamoDB", "IAM", "VPC", "SQS"];
+const devOps = ["Docker", "Kubernetes", "Terraform", "GitHub Actions", "Jenkins", "Ansible", "Enterprise Linux"];
+const tools = ["Neovim", "Bash", "PowerShell", "MySQL", "JSON", "YAML", "Markdown", "MDX", "Jira", "Confluence"];
 ---
 <Layout title={"splashpage"}>
-    <main>
-	<section>
+    <main class="flex flex-col space-y-8">
+	<section class="flex flex-col space-y-3">
 	    <p>
-		I'm a DevOps Engineer building simpler, seamless workflows for devs and users alike. I fell in love with tech and its endless possibilities as early as I can remember, and I strive to make it easier for others to fall in love with it, too.
+		I'm a DevOps Engineer building simpler, seamless workflows for all.
 	    </p>
+	    <p>
+		Since 2017, I've worn a lot of hats, from Systems Administator to Software Developer, and over the years I've garnered a fondness for tools that just work for you. 
+	    </p>
+	    <p>
+		I strive to make technology smoother and intuitive at every step, supporting peers and clients alike in the hopes of fostering that same fondness for good tools, too.
+	    </p>
+	</section>
+	<section class="flex flex-col space-y-3">
+	    <h2>Work History</h2>
+	    <p>Accenture (Pharmaceutical), Program Management Representative</p>
+	    <p>Accenture (Insurance), DevOps Engineer</p>
+	    <p>Hermes of Paris USA, Information Technology Intern</p>
+	    <p>The Metropolitan Museum of Art, Buildings and Management Intern</p>
+	</section>
+	<section class="flex flex-col space-y-3">
+	    <h2>Projects</h2>
+	    <p>usefulsplash.dev | writing, learning, and coding in public</p>
+	    <p>Koi Pond | personal server and homelab</p>
+	</section>
+	<section class="flex flex-col space-y-3">   
+	    <h2>Skillset</h2>
+	    <section class="inline-grid grid-cols-2 gap-3">
+		<h3>Languages</h3>
+		<ul class="">
+		    {languages.map((lang) => <li>{lang}</li>)}
+		</ul>
+		<h3>Web Dev</h3>
+		<ul>
+		    {webDev.map((webdev) => <li>{webdev}</li>)}
+		</ul>
+		<h3>AWS</h3>
+		<ul>
+		    {cloud.map((service) => <li>{service}</li>)}
+		</ul>
+		<h3>IT & DevOps</h3>
+		<ul>
+		    {devOps.map((IT) => <li>{IT}</li>)}
+		</ul>
+		<h3>Tools</h3>
+		<ul>
+		    {tools.map((tool) => <li>{tool}</li>)}
+		</ul>
+	    </section>
+	</section>
+	<section>
+	   <a href="/enrique_javier_resume.pdf">Download Resume (PDF)</a>
 	</section>
     </main>
 </Layout>
