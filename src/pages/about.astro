@@ -1,5 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+
+const job = "Accenture";
+const employed = false
 ---
 <Layout title={"about"}>
     <main>
@@ -8,6 +12,7 @@ import Layout from "../layouts/Layout.astro";
 		<p>
 		    Though I like to fancy myself a DevOps engineer, I've been fortunate enough to experience many roles and positions since 2017, giving me a greater perspective on the issues that can arise trying to use tech to optimize work. Through my time at The MET, Hermes, Accenture, and more, I've strengthened my skills in problem solving through code, architecture, and communication; allowing for the development of tools and methodologies that make that work at least 1% easier for all.
 		</p>
+		{ employed ? <p>I am currently working at {job}!</p> : <p>I am currently looking for work!</p>}
 	    </div>
 	</section>
     </main>
