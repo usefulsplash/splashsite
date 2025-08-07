@@ -3,4 +3,18 @@
 
 @theme {
     --font-mono: "Victor Mono Variable", monospace;
+    --color-ef-bg: #2D353B;
+    --color-ef-bg-red: #514045;
+    --color-ef-bg-yellow: #4d4c43;
+    --color-ef-bg-green: #425047;
+    --color-ef-bg-blue: #3a515d;
+    --color-ef-bg-purple: #4a444e;
+    --color-ef-fg: #d3c6aa;
+    --color-ef-red: #e67e80;
+    --color-ef-orange: #e69875;
+    --color-ef-yellow: #dbbc7f;
+    --color-ef-green: #a7c080;
+    --color-ef-aqua: #83c092;
+    --color-ef-blue: #7fbbb3;
+    --color-ef-purple: #d699b6;
 }
