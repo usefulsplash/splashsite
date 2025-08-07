@@ -1,11 +1,22 @@
 ---
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
+
+const dateOptions: object = {
+    year: "2-digit",
+    month: "numeric",
+    day: "numeric",
+};
+
+
+const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString("en-US", dateOptions);
 ---
 <Layout title={frontmatter.title}>
     <meta charset="utf-8" />
-    <h1>{frontmatter.title}</h1>
-    <p>Written by {frontmatter.author}</p>
-    <slot />
-</Layout>
+    <section class="flex flex-col space-y-3">
+	<h1 class="text-ef-aqua font-bold text-lg">{frontmatter.title}</h1>
+	<p class="text-ef-orange font-extralight">{formattedPublishDate}</p>
+	<slot />
+    </section>
+   </Layout>
 
