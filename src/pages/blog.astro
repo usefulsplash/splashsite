@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import { formatDate } from "../utils/date";
 
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
@@ -8,7 +7,7 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
     <main>
 	<section>
 	    <ul>
-		{allPosts.map((post: any) => <li><a href={post.url} class="text-base text-ef-aqua">{post.frontmatter.title}</a></li>)}
+		{allPosts.map((post: any) => <li><a href={post.url} class="text-base font-semibold text-ef-aqua">{post.frontmatter.title}</a></li>)}
 	    </ul>
 	</section>
     </main>

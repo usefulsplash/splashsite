@@ -13,7 +13,7 @@ const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString("e
 <Layout title={frontmatter.title}>
     <meta charset="utf-8" />
     <section class="flex flex-col space-y-3">
-	<h1 class="text-ef-aqua font-bold text-base">{frontmatter.title}</h1>
+	<h1 class="text-ef-aqua font-semibold text-base">{frontmatter.title}</h1>
 	<p class="text-ef-orange font-extralight">{formattedPublishDate}</p>
 	<slot />
     </section>
