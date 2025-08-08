@@ -4,16 +4,35 @@ import Layout from "../layouts/Layout.astro";
 
 const job = "N/A";
 const employed = false
+const currGame = "Fire Emblem Engage"
 ---
 <Layout title={"about"}>
-    <main>
+    <main class="flex flex-col space-y-8">
 	<section class="flex flex-col space-y-6">
-	    <div>
-		<p>
-		    Though I like to fancy myself a DevOps engineer, I've been fortunate enough to experience many roles and positions since 2017, giving me a greater perspective on the issues that can arise trying to use tech to optimize work. Through my time at The MET, Hermes, Accenture, and more, I've strengthened my skills in problem solving through code, architecture, and communication; allowing for the development of tools and methodologies that make that work at least 1% easier for all.
-		</p>
-		{ employed ? <p>I am currently working at {job}!</p> : <p>I am currently looking for work!</p>}
-	    </div>
+	    <p>I'm a born-and-bred New Yorker from Queens, and a very proud first-gen Filipino-American.</p>
+	    <p>My earliest memory is studying the Prima Guide for Pokemon FireRed on the GBA, cementing my love for video games and the tech that makes them possible.</p>
+	    <p>Since then, I've been chasing the high of intense problem solving in any field, be it in a highly technical work environment or a Pokemon VGC local.</p>
+	    <p>There is a simple joy in comprehension, and I try to seek it out in any new experience I can get my hands on.</p>
+	</section>
+	<section class="flex flex-col space-y-6">
+	    <h2 class="font-semibold text-ef-aqua text-base">Currently</h2>
+	    <ul class="list-disc list-inside"> 
+		{ employed ? 
+		    <li>working at {job}!</li> 
+		    : <li>Looking for work in DevOps and IT roles (pls hire me)</li>
+		}
+		<li>Playing through my gaming backlog [now playing: {currGame}]</li>
+		<li>Reading <span class="underline">The Pragmatic Programmer</span> by Dave Thomas and Andy Hunt</li>
+		<li>Practicing recipes to host dinner parties and get-togethers</li>
+		<li>Tinkering with my homelab environment to access my data anywhere</li>
+	    </ul>
+	    <h2 class="font-semibold text-ef-aqua text-base">Previously</h2>
+	    <ul class="list-disc list-inside">
+		<li>Led user requirement gathering and refining for a custom medical coding software solution with <a href="https://www.accenture.com/us-en" target="_blank" class="text-ef-purple hover:text-ef-red">Accenture</a> for a leading pharmaceutical company</li>
+		<li>Developed and maintained CI/CD pipelines with <a href="https://www.accenture.com/us-en" target="_blank" class="text-ef-purple hover:text-ef-red">Accenture</a> for the business insurance work stream of a leading insurance company</li>
+		<li>Supported remote data center integrations with on-prem hardware at <a href="https://www.hermes.com/us/en/" target="_blank" class="text-ef-purple hover:text-ef-red">Hermes of Paris USA</a></li>
+		<li>Researched archive architectural budget spending data for new exhibit budget projections at <a href="https://www.metmuseum.org/" target="_blank" class="text-ef-purple hover:text-ef-red">The Metropolitan Museum of Art</a></li>
+	    </ul>
 	</section>
     </main>
 </Layout>
