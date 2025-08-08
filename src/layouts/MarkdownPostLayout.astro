@@ -3,11 +3,10 @@ import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 
 const dateOptions: object = {
-    year: "2-digit",
-    month: "numeric",
+    month: "short",
     day: "numeric",
+    year: "numeric",
 };
-
 
 const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString("en-US", dateOptions);
 ---
@@ -18,5 +17,5 @@ const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString("e
 	<p class="text-ef-orange font-extralight">{formattedPublishDate}</p>
 	<slot />
     </section>
-   </Layout>
+</Layout>
 
