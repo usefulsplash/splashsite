@@ -34,25 +34,25 @@ const tools = ["Neovim", "Bash", "PowerShell", "MySQL", "JSON", "YAML", "Markdow
 	</section>
 	<section class="flex flex-col space-y-3">   
 	    <h2 class="text-base text-ef-green font-bold">Skillset</h2>
-	    <section class="inline-grid grid-cols-2 gap-3">
+	    <section class="grid grid-cols-3 gap-3">
 		<h3 class="text-ef-aqua font-bold">Languages</h3>
-		<ul class="">
+		<ul class="col-span-2">
 		    {languages.map((lang) => <li>{lang}</li>)}
 		</ul>
 		<h3 class="text-ef-aqua font-semibold">Web Dev</h3>
-		<ul>
+		<ul class="col-span-2">
 		    {webDev.map((webdev) => <li>{webdev}</li>)}
 		</ul>
 		<h3 class="text-ef-aqua font-semibold">AWS</h3>
-		<ul>
+		<ul class="col-span-2">
 		    {cloud.map((service) => <li>{service}</li>)}
 		</ul>
 		<h3 class="text-ef-aqua font-semibold">IT & DevOps</h3>
-		<ul>
+		<ul class="col-span-2">
 		    {devOps.map((IT) => <li>{IT}</li>)}
 		</ul>
 		<h3 class="text-ef-aqua font-semibold">Tools</h3>
-		<ul>
+		<ul class="col-span-2">
 		    {tools.map((tool) => <li>{tool}</li>)}
 		</ul>
 	    </section>
