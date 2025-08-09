@@ -9,6 +9,4 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-Like the tutorial level. Get it?
 
-Anyway, shield first to get Second Chance and Once More early, don't forget!
