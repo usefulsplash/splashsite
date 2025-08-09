@@ -11,14 +11,14 @@ const { title = "Default" } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="bg-ef-bg text-ef-fg">
+<html lang="en" class="bg-ef-bg text-ef-fg flex flex-col min-h-screen justify-center items-center">
     <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>{title}</title>
     </head>
-    <body class="font-mono px-6 py-12 text-sm bg-primary">
+    <body class="font-mono max-w-[60em] px-[1em] py-[2em] text-sm min-[480px]:px-[7em]">
 	<Header />
 	<slot />
 	<Footer />
