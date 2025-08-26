@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@fontsource-variable/victor-mono": "^5.2.6",
-    "@tailwindcss/vite": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.12",
     "astro": "^5.12.8",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.12"
   }
 }
