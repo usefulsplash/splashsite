@@ -9,11 +9,11 @@ jobs:
       id-token: write
       contents: read
     steps:
-      - name: Configure AWS credentials
+      - name: Configure AWS credentials from Test account
         uses: aws-actions/configure-aws-credentials@v3
         with:
           role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/GitHub_Actions_Role
           aws-region: us-east-1
-      - name: Fetch the caller ID
+      - name: Fetch the caller identity
         run: |
           aws sts get-caller-identity
