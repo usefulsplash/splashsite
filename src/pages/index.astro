@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro"
 const job = "N/A";
 const employed = false
 const currGame = "Digimon Story: Cyber Sleuth"
+const currBook = "The Phoenix Project by Gene Kim"
 ---
 <Layout title={"splashpage"}>
     <main class="flex flex-col space-y-8">
@@ -26,9 +27,9 @@ const currGame = "Digimon Story: Cyber Sleuth"
 		    : <li>Looking for work in DevOps and IT roles (pls hire me)</li>
 		}
 		<li>Playing through my gaming backlog [now playing: {currGame}]</li>
-		<li>Reading <span class="underline">The Pragmatic Programmer</span> by Dave Thomas and Andy Hunt</li>
+		<li>Reading {currBook}</li>
 		<li>Practicing recipes to host dinner parties and get-togethers</li>
-		<li>Tinkering with my homelab environment to access my data anywhere</li>
+		<li>Tinkering with my homelab environment to prepare for the CCNA</li>
 	    </ul>
 	    <h2 class="font-semibold text-ef-aqua text-base">Previously</h2>
 	    <ul class="list-disc list-inside">
