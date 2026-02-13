@@ -1,3 +1,8 @@
+---
+title: 'How I'm Hosting This Blog'
+pubDate: 2026-01-03
+---
+
 # How I'm Hosting This Blog
 Full transparency: this post is more for me to remember how I even got all this setup, but if anyone finds this helpful as well for hosting their own blog, that'd make me very happy.
 ## The Tech Stack
