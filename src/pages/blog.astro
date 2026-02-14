@@ -14,12 +14,14 @@ const dateOptions: object = {
 	<section class="flex flex-col space-y-2">
 	    <h2 class="text-ef-green">Archive</h2>
 	    <ul>
-		{allPosts.map((post: any) => (
-			<li>
-			    <a href={post.url} class="underline hover:text-ef-red">{post.frontmatter.title}</a>
-			    <p class="inline font-extralight">{ new Date(post.frontmatter.pubDate).toLocaleString("en-US", dateOptions) }</p>
-		        </li>
-		))}
+	    {
+	    allPosts.map((post: any) => 
+	        <li>
+	        <a href={post.url} class="underline hover:text-ef-red">{post.frontmatter.title}</a>
+	        <p class="inline font-extralight">{ new Date(post.frontmatter.pubDate).toLocaleString("en-US", dateOptions) }</p>
+	        </li>
+	    )
+	    }
 	    </ul>
 	</section>
     </main>
