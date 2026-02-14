@@ -1,6 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'How I'm Hosting This Blog'
 pubDate: 2026-01-03
+description: 'wow if i forget any of this im screwed'
+author: 'Enrique Javier'
+tags: ['tech', 'personal reference', 'devops']
 ---
 
 # How I'm Hosting This Blog
