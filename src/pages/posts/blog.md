@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'How I'm Hosting This Blog'
+title: 'Hosting This Blog'
 pubDate: 2026-03-01
 description: 'Tutorial levels are for suckers.'
 author: 'Enrique Javier'
