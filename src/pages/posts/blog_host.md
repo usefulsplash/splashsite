@@ -4,6 +4,9 @@ title: 'How I'm Hosting This Blog'
 pubDate: 2026-01-03
 description: 'wow if i forget any of this im screwed'
 author: 'Enrique Javier'
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ['tech', 'personal reference', 'devops']
 ---
 
