@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Dive To The Heart'
-pubDate: 2026-08-07
+title: 'How I'm Hosting This Blog'
+pubDate: 2026-03-01
 description: 'Tutorial levels are for suckers.'
 author: 'Enrique Javier'
 image:
