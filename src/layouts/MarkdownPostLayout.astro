@@ -35,7 +35,17 @@ const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString("e
 	<section class="flex flex-col space-y-3">
 	    <h1 class="text-ef-green text-base">{frontmatter.title}</h1>
 	    <p class="text-ef-orange font-extralight text-xs">{formattedPublishDate}</p>
-	<slot />
+	    <article class="
+		prose
+		prose-lg
+		prose-slate
+		/* Heading overrides */
+		prose-h2:font-semibold prose-h2:text-ef-aqua prose-h2:text-base
+		/* Link overrides */
+		prose-a:text-ef-purple prose-a:hover:text-ef-red prose-a:underline
+	    ">
+		<slot />
+	    </article>
 	</section>
 	<Footer />
     </body>
