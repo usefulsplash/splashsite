@@ -11,7 +11,7 @@
   "dependencies": {
     "@fontsource-variable/victor-mono": "^5.2.6",
     "@tailwindcss/vite": "^4.1.12",
-    "astro": "^5.12.8",
+    "astro": "^6.1.5",
     "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
