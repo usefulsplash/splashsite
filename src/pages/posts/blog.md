@@ -9,7 +9,7 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-Full transparency: this post is more for me to remember how I even got all this setup, but if anyone finds this helpful as well for hosting their own blog, that'd make me very happy.
+Full transparency: this post is more for me to remember how I even got all this set up, but if anyone finds this helpful as well for hosting their own blog, that'd make me very happy.
 ## The Tech Stack
 I based the structure of this website using a modified version of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/) and built it using [Astro](https://astro.build/). You could probably build something similar using [11ty](https://www.11ty.dev/) or [Hugo](https://gohugo.io/), but I wanted the option to inject JavaScript later for fun. The site's build is being hosted on an AWS S3 bucket, using CloudFront as my CDN, and a purchased [Porkbun](https://porkbun.com/) domain handling my DNS records. CI/CD is managed by GitHub and [GitHub Actions](https://github.com/features/actions), automatically running my pipeline when new code is pushed to the repo and deploying it to my S3 bucket.
 This is a very simply stack, but it works seamlessly for making changes to your site and delivering it to your audience. You can defintely zhuzh it up with more features (I'll get to my plans for that later on) but it gets the job done.
