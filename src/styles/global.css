@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import '@fontsource-variable/victor-mono';
+@plugin "@tailwindcss/typography";
 
 @theme {
     --font-mono: "Victor Mono Variable", monospace;
