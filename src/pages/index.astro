@@ -3,17 +3,17 @@ import Layout from "../layouts/Layout.astro"
 
 const job = "N/A";
 const employed = false
-const currGame = "Pokemon Legends: Z-A"
-const currBook = "The Phoenix Project by Gene Kim"
+const currGame = "Final Fantasy VII: Rebirth"
+const currBook = "The Lathe of Heaven by Ursula K. LeGuin"
 ---
 <Layout title={"splashpage"}>
     <main class="flex flex-col space-y-8">
 	<section class="flex flex-col space-y-3 text-pretty">
 	    <p>
-		I'm a DevOps Engineer building simpler, seamless workflows for all.
+		I'm a Technical Architect building simpler, seamless workflows for all.
 	    </p>
 	    <p>
-		Since 2017, I've worn a lot of hats, from Systems Administator to Software Developer, and over the years I've garnered a fondness for tools that just work for you. 
+		Since 2017, I've worn a lot of hats, from Systems Administator to DevOps Engineer, and over the years I've garnered a fondness for tools that just work for you. 
 	    </p>
 	    <p>
 		I strive to make technology smoother and intuitive at every step, supporting peers and clients alike in the hopes of fostering that same fondness for good tools, too.
@@ -24,7 +24,7 @@ const currBook = "The Phoenix Project by Gene Kim"
 	    <ul class="list-disc list-inside"> 
 		{ employed ? 
 		    <li>working at {job}!</li> 
-		    : <li>Looking for work in DevOps and IT roles (pls hire me)</li>
+		    : <li>Looking for work in IT and DevOps roles (pls hire me)</li>
 		}
 		<li>Playing through my gaming backlog [now playing: {currGame}]</li>
 		<li>Reading {currBook}</li>
