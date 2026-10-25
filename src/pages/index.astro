@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro"
 
-const job = "N/A";
-const employed = false
-const currGame = "Final Fantasy VII: Rebirth"
+const job = "School Aide Technician";
+const employed = true
+const currGame = "Fire Emblem: Fortune's Weave"
 const currBook = "The Lathe of Heaven by Ursula K. LeGuin"
 ---
 <Layout title={"splashpage"}>
@@ -23,7 +23,7 @@ const currBook = "The Lathe of Heaven by Ursula K. LeGuin"
 	    <h2 class="font-semibold text-ef-aqua text-base">Currently</h2>
 	    <ul class="list-disc list-inside"> 
 		{ employed ? 
-		    <li>working at {job}!</li> 
+		    <li>working as a {job}!</li> 
 		    : <li>Looking for work in IT and DevOps roles (pls hire me)</li>
 		}
 		<li>Playing through my gaming backlog [now playing: {currGame}]</li>
